@@ -2,6 +2,7 @@
 
 module.exports = function( grunt ) {
 
+	grunt.loadNpmTasks( "kouto-swiss" );
 	grunt.loadNpmTasks( "grunt-contrib-stylus" );
 	grunt.loadNpmTasks( "grunt-contrib-jade" );
 	grunt.loadNpmTasks( "grunt-contrib-uglify" );
