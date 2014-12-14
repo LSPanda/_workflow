@@ -67,10 +67,11 @@ module.exports = function( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( "build", [
+	grunt.registerTask( "work", [
 		"jade",
 		"stylus",
 		"uglify",
-		"notify_hooks"
+		"notify_hooks",
+		"watch"
 	] );
 };

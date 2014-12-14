@@ -14,8 +14,7 @@ Ce workflow n'est pas fini et est toujours améliorable !
 1. Cloner le repo
 1. À l'aide du terminal, se placer dans le répertoire `mockUp`
 1. Lancer `npm install` pour télécharger les dépendances NPM
-1. Lancer `grunt build` pour compiler tous les fichiers
-1. Lancer `grunt watch` pour compiler les fichiers durant le travail
+1. Lancer `grunt work` pour compiler tous les fichiers et commencer le travail
 
 ### Liste des améliorations à apportées
 
