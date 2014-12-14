@@ -1,0 +1,33 @@
+/*!
+* CSS Methodology based on InuitCSS, used for my owned workflow
+*
+* https://github.com/LSPanda | http://portfolio.simon-leyder.be
+*/
+///*------------------------------------*\
+//    #TOOLS MIXINS
+//\*------------------------------------*/
+
+
+
+
+
+// Add prefix for `transition` rules
+transition( where, times )
+    -webkit-transition: where times
+    -moz-transition:    where times
+    -ms-transition:     where times
+    transition:         where times
+
+// Add prefix for `border-radius` rules
+border-radius( size )
+    -webkit-border-radius: size
+    -moz-border-radius:    size
+    -ms-border-radius:     size
+    border-radius:         size
+
+// Add prefix for `box-shadows` rules
+box-shadows( angle, blur, color, opa )
+    -webkit-box-shadow: angle angle blur 0px rgba(color, color, color, opa)
+    -moz-box-shadow:    angle angle blur 0px rgba(color, color, color, opa)
+    -ms-box-shadow:     angle angle blur 0px rgba(color, color, color, opa)
+    box-shadow:         angle angle blur 0px rgba(color, color, color, opa)
