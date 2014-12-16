@@ -18,5 +18,5 @@ Ce workflow n'est pas fini et est toujours améliorable !
 
 ### Liste des améliorations à apportées
 
-1. *ITCSS :* Préparer l'architecture dans le dossier `PersonalCSS`
+1. *ITCSS :* Préparer l'architecture dans le dossier `PersonalCSS` avec l'aide de `kouto-swiss`
 1. *CoffeScript :* Apprendre et mettre en place dans le `Gruntfile.js`
