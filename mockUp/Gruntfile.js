@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 		"stylus": {
 			"styles": {
 		      "options": {
-		        "compress": false,
+		        "compress": true, // - Change value to have lisible CSS
 				"use": [
 					require("kouto-swiss")
 				]
@@ -27,12 +27,12 @@ module.exports = function( grunt ) {
 		"jade": {
 			"html": {
 				"options": {
-					"pretty": true,
+					"pretty": false, // - Change value to have lisible HTML
 					"data": {
 						"debug": false,
 					},
 				},
-				"files": {
+				"files": { // - Add jade's fill to compile here
 					"bin/index.html": "src/jade/main.jade"
 				}
 			}
@@ -47,8 +47,8 @@ module.exports = function( grunt ) {
 		"notify_hooks": {
 			"options": {
 				"enable": true,
-				"success": true,
-				"duration": 3
+				"success": true, // - Change value to see notify only for errors
+				"duration": 1
 			}
 		},
 		"watch": {
