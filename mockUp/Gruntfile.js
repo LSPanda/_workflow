@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 		"stylus": {
 			"styles": {
 		      "options": {
-		        "compress": true, // - Change value to have lisible CSS
+		        "compress": false, // - Change value to have lisible CSS
 				"use": [
 					require("kouto-swiss")
 				]
