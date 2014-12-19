@@ -11,20 +11,21 @@
 
 
 
-// REM fallback
+// REM to PX fallback
+rem-fallback( property, arguments )
+    px-fall  = values
+    rem-fall = {}
 
-rem-fallback( property, values )
-    px-fall = values
-    rem-fall = ""
+    for argument in arguments
+        value = strip-units( argument )
+        base  = wf_font-size
+        if rem-fall == null
+            rem-fall = value / base * 1rem
+        else
+            rem-fall += value / base * 1rem
 
-    rules = values if length(values) > 1
-
-    for value, i in rules
-        args = _strip-units( value )
-        rem-fall += args / 16 * 1rem
-
-    {property}: px-fall
-    {property}: rem-fall
+    {property} px-fall
+    {property} rem-fall
 
 // Add prefix for `transition` rules
 transition( where, times )
