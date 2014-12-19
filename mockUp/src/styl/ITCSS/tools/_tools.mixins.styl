@@ -13,32 +13,18 @@
 
 // REM fallback
 
-rem-fallback(property, values)
-    px = ()
-    rem = ()
+rem-fallback( property, values )
+    px-fall = values
+    rem-fall = ""
 
-    for value in values
+    rules = values if length(values) > 1
 
-        if value == 0 or value == auto
-            px = push(px , value)
-            rem = push(rem, value)
+    for value, i in rules
+        args = _strip-units( value )
+        rem-fall += args / 16 * 1rem
 
-        else
-            unit = unit(value)
-            val = parseInt(value)
-
-        if unit == "px"
-            px = push(px, value)
-            rem = push(rem, ((val / 16) * 1rem ))
-        if unit == "rem"
-            px = push(px, ((val * 16) * 1px))
-            rem = push(rem, value)
-
-    if px == rem
-        {property}: px
-    else
-        {property}: px
-        {property}: rem
+    {property}: px-fall
+    {property}: rem-fall
 
 // Add prefix for `transition` rules
 transition( where, times )
