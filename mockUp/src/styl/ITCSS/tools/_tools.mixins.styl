@@ -12,17 +12,14 @@
 
 
 // REM to PX fallback
-rem-fallback( property, arguments )
-    px-fall  = arguments
+rem-fallback( property, argument )
+    px-fall  = argument
     rem-fall = {}
 
-    for argument in arguments
-        value = strip-units( argument )
-        base  = strip-units( wf_font-size )
-        if rem-fall == null
-            rem-fall = value / base * 1rem
-        else
-            rem-fall += value / base * 1rem
+    value = strip-units( argument )
+    base  = strip-units( wf_font-size )
+
+    rem-fall = value / base * 1rem
 
     {property} px-fall
     {property} rem-fall
