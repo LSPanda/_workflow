@@ -11,19 +11,6 @@
 
 
 
-// REM to PX fallback
-rem-fallback( property, argument )
-    px-fall  = argument
-    rem-fall = {}
-
-    value = strip-units( argument )
-    base  = strip-units( wf_font-size )
-
-    rem-fall = value / base * 1rem
-
-    {property} px-fall
-    {property} rem-fall
-
 // Add prefix for `transition` rules
 transition( where, times )
     -webkit-transition: where times
