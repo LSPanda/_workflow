@@ -2,9 +2,11 @@
 
 ***
 
-Worflow Grunt mis en place pour mon propre usage, utilisé pour la réalisation de mes sites web dans le cadre des mes cours et/ou travaux personnels.
+Worflow avec Grunt mis en place pour mon propre usage, utilisé pour la réalisation de mes sites web dans le cadre des mes cours et/ou travaux personnels.
 
 Ce workflow n'est pas fini et est toujours améliorable !
+
+Dépendances utilisées : Jade / Stylus / Ugligy / Notify / Watch / Kouto-swiss
 
 
 ***
