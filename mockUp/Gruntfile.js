@@ -33,7 +33,7 @@ module.exports = function( grunt ) {
 					},
 				},
 				"files": { // - Add jade's fill to compile here
-					"bin/html/index.html": "src/jade/main.jade"
+					"bin/index.html": "src/jade/main.jade"
 				}
 			}
 		},
@@ -53,7 +53,7 @@ module.exports = function( grunt ) {
 		},
 		"watch": {
 			"styles": {
-				"files": [ "src/styl/*.styl" ],
+				"files": [ "src/styl/**/*.styl" ],
 				"tasks": [ "stylus:styles", "notify_hooks" ]
 			},
 			"html": {
