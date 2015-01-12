@@ -61,7 +61,7 @@ module.exports = function( grunt ) {
 				"tasks": [ "jade:html", "notify_hooks" ]
 			},
 			"scripts": {
-				"files": [ "src/js/script.js" ],
+				"files": [ "src/js/*.js" ],
 				"tasks": [ "uglify:scripts", "notify_hooks" ]
 			}
 		}
