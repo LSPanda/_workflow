@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
 				]
 		      },
 		      "files": {
-		        "bin/css/main.css": "src/styl/main-min.styl"
+		        "bin/css/main-main.css": "src/styl/main.styl"
 		      }
 		    }
 		},
@@ -40,7 +40,7 @@ module.exports = function( grunt ) {
 		"uglify": {
 			"scripts": {
 				"files": {
-					"bin/js/script.js": "src/js/script-min.js"
+					"bin/js/script-min.js": "src/js/script.js"
 				}
 			}
 		},
