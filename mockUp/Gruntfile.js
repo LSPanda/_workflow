@@ -14,13 +14,13 @@ module.exports = function( grunt ) {
 		"stylus": {
 			"styles": {
 		      "options": {
-		        "compress": false, // - Change value to have lisible CSS
+		        "compress": true, // - Change value to have lisible CSS
 				"use": [
 					require("kouto-swiss")
 				]
 		      },
 		      "files": {
-		        "bin/css/main-main.css": "src/styl/main.styl"
+		        "bin/css/main-min.css": "src/styl/main.styl"
 		      }
 		    }
 		},
